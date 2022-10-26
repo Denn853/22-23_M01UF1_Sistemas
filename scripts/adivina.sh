@@ -1,10 +1,31 @@
 #!/bin/bash
 
-echo "Adivina el número del 1 al 100: "
+clear
 
-read NUM
+NUMERO_RANDOM=$(( $RANDOM % 100 + 1 ))
 
-if [ $NUM -eq 3 ]
-then 
-	echo "Son iguales"
-fi
+#echo $NUMERO_RANDOM
+
+#NUM=0
+#while [ $NUMERO_RANDOM -ne $NUM ]
+
+#while [ "$NUMERO_RANDOM" != "$NUM" ]]
+
+while [[ $NUMERO_RANDOM -ne $NUM ]]
+do
+	echo "Adivina el número del 1 al 100: "
+
+	read NUM	
+
+	if [[ $NUM -gt $NUMERO_RANDOM ]]
+	then
+		echo "es menor"
+	
+	elif [[ $NUM -lt $NUMERO_RANDOM ]]
+	then
+		echo "es mayor"
+
+	else
+		echo "son iguales"
+	fi
+done
