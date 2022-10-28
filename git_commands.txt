@@ -1,0 +1,8 @@
+
+git add -A .  -> add all content for the directory actual and recursives
+
+git commit -m " "  -> comment to view the changes on git
+
+git push  -> add changes on git - sincroniza
+
+git pull  -> recive los datos de git a la MV
